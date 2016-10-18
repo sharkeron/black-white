@@ -1,0 +1,347 @@
+@font-face {
+    font-family: "font awesome";
+    src: url(../fonts/FontAwesome/fontawesome-webfont.eot) format("embedded-opentype");
+    src: url((../fonts/FontAwesome/fontawesome-webfont.otf) format("opentype"), url(../fonts/FontAwesome/fontawesome-webfont.ttf) format("truetype"), url(../fonts/FontAwesome/fontawesome-webfont.woff) format("woff"), url(../fonts/FontAwesome/fontawesome-webfont.woff2) format("woff2"), url(../fonts/FontAwesome/fontawesome-webfont.svg) format("svg");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    background-color: #191919;
+    color: #303030;
+}
+
+.container {
+    width: 1500px;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+}
+
+header {
+    padding-top: 50px;
+}
+
+.logo {
+    box-sizing: border-box;
+    padding-left: 150px;
+    display: inline-block;
+    width: 66%;
+    font-family: "Roboto";
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+nav {
+    font-family: "Roboto";
+    float: right;
+    width: 33%;
+    font-size: 1.125rem;
+}
+
+.menu {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+.menu_item2 {
+    margin-right: 30px;
+    margin-left: 50px;
+}
+
+.menu_item3 {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #303030;
+}
+
+.menu a:hover {
+    border-bottom: 1px solid red;
+    color: red;
+}
+
+.menu_item3:hover {
+    color: red;
+}
+
+.menu_item3_submenu {
+    display: none;
+    width: 100px;
+    height: 60px;
+    list-style: none;
+}
+
+.menu_item3:hover .menu_item3_submenu {
+    display: block;
+    position: absolute;
+    left: -60px;
+}
+
+.menu_item3:hover .menu_item3_submenu a {
+    text-decoration: none;
+    color: #303030;
+    line-height: 2rem;
+}
+
+.menu_item3:hover .menu_item3_submenu a:hover {
+    color: red;
+}
+
+.first {
+    background: url(../img/bg_gradient.png);
+}
+
+.first_content {
+    display: inline-block;
+    margin-top: 125px;
+    margin-left: 150px;
+    width: 40%;
+    font-family: "Roboto";
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: lighter;
+}
+
+.first_content_header {
+    font-family: "Raleway";
+    font-size: 9.375rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.view {
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.view>a {
+    color: red;
+    text-decoration: none;
+}
+
+.view:hover {
+    transform: translateY(-2px);
+}
+
+.first_image {
+    text-align: center;
+    width: 40%;
+    display: inline-block;
+}
+
+.first_paginator {
+    text-align: center;
+    letter-spacing: 5px;
+    margin-top: 60px;
+}
+
+.red {
+    color: red;
+}
+
+.first_paginator a {
+    text-decoration: none;
+    color: #303030;
+}
+
+.second {
+    background: #FFFFFF;
+    width: 80%;
+    height: 1195px;
+    margin: 80px 150px 5px 150px;
+}
+
+.second_header {
+    padding-top: 110px;
+    text-align: center;
+    font-family: "raleway";
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+
+.second_content {
+    text-align: center;
+    font-family: "Raleway";
+    font-weight: normal;
+    font-size: 1.2rem;
+}
+
+.second_content img {
+    padding-bottom: 15px;
+}
+
+.second_image {
+    margin: 0 auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 87.91%;
+    height: 850px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.image {
+    position: relative;
+}
+
+.image1 {
+    width: 65.40%;
+    height: 380px;
+}
+
+.image2, .image3, .image4, .image5 {
+    width: 30.8%;
+    height: 380px;
+}
+
+.image_hover {
+    box-sizing: border-box;
+    display: none;
+    position: absolute;
+    width: 101%;
+    height: 100%;
+    background-color: red;
+    color: #fff;
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 1.87rem;
+    padding-left: 40px;
+    padding-top: 250px;
+}
+
+.line {
+    vertical-align: top;
+    letter-spacing: -5px;
+}
+
+.image:hover .image_hover {
+    display: inherit;
+    top: 0;
+}
+
+.third_header {
+    text-align: center;
+    font-family: "raleway";
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 3rem;
+    text-transform: uppercase;
+    margin-top: 70px;
+}
+
+.third_content {
+    text-align: center;
+    font-family: "raleway";
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 15px;
+}
+
+form {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.input_email {
+    position: relative;
+    width: 33%;
+    display: inline-block;
+}
+
+.input_submit {
+    position: relative;
+    width: 14%;
+    display: inline-block;
+}
+
+input[name=email] {
+    width: 100%;
+    height: 70px;
+    border: none;
+    outline: none;
+    padding-left: 70px;
+    border-radius: 50px 0 0 50px;
+    margin-top: 25px;
+    font-family: "raleway";
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: red;
+}
+
+input[type=submit] {
+    width: 100%;
+    height: 70px;
+    border: none;
+    outline: none;
+    text-align: center;
+    border-radius: 0 50px 50px 0;
+    margin-top: 25px;
+    background-color: red;
+    font-family: "raleway";
+    font-weight: normal;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+input[type=submit]:hover {
+    background-color: #000;
+}
+
+.email_icon {
+    top: 48px;
+    left: 30px;
+    position: absolute;
+    font-size: 1.3rem;
+    color: rgba(31, 30, 29, 0.4);
+}
+
+.btn_icon {
+    position: absolute;
+    font-size: 1rem;
+    color: #fff;
+    top: 51px;
+    left: 162px;
+}
+
+::-webkit-input-placeholder {
+    font-family: "raleway";
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.social_buttons {
+    margin: 50px 580px 0 580px;
+    padding-bottom: 50px;
+}
+
+.socbtn {
+    background-image: url(../img/Ellipse.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    padding: 0 0 0 0;
+    font-size: 1.8rem;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 70px;
+}
+
+.socbtn a {
+    color: #979797;
+    text-decoration: none;
+}
+
+.socbtn a:hover {
+    color: red;
+}
