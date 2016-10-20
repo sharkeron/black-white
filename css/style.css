@@ -26,6 +26,7 @@ header {
 }
 
 .logo {
+    float: left;
     box-sizing: border-box;
     padding-left: 150px;
     display: inline-block;
